@@ -1,11 +1,11 @@
-# promptlead_jd402
+# pii_masking_restore_budget_alloc
 
 **按权重把Prompt 工程负责人·敏感信息的脱敏与回填的额度分配到各项。**
 
-`promptlead_jd402` —— 按给定权重把总额度分配到各项，报告超分配项与利用率
+`pii_masking_restore_budget_alloc` —— 按给定权重把总额度分配到各项，报告超分配项与利用率
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`promptlead_jd402.py` 拷走就能用
+- 单文件，`pii_masking_restore_budget_alloc.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install breansecur-promptlead_jd402
+pip install breansecur-pii_masking_restore_budget_alloc
 ```
 
 装完直接用命令名调用：
 
 ```bash
-promptlead_jd402 --help
+pii_masking_restore_budget_alloc --help
 ```
 
-也可以不用安装，直接把 `promptlead_jd402.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `pii_masking_restore_budget_alloc.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ promptlead_jd402 --help
 ## 用法
 
 ```bash
-python promptlead_jd402.py --file input.txt
-python promptlead_jd402.py --text "示例内容"
-python promptlead_jd402.py --file input.txt --json
+python pii_masking_restore_budget_alloc.py --file input.txt
+python pii_masking_restore_budget_alloc.py --text "示例内容"
+python pii_masking_restore_budget_alloc.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python promptlead_jd402.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_promptlead_jd402.py
+python test_pii_masking_restore_budget_alloc.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_promptlead_jd402.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/breansecur/promptlead_jd402>
+- GitHub 仓库：<https://github.com/breansecur/pii_masking_restore_budget_alloc>
 
 ---
 
@@ -79,7 +79,7 @@ python test_promptlead_jd402.py
 breansecur 做Prompt 工程负责人·敏感信息的脱敏与回填相关的问题，方向对标OpenAI的实习Prompt 工程负责人岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://breansecur.github.io>
-- 仓库：<https://github.com/breansecur/promptlead_jd402>
+- 仓库：<https://github.com/breansecur/pii_masking_restore_budget_alloc>
 
 ## 许可
 
